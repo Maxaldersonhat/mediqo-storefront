@@ -1,6 +1,20 @@
-import type { MetadataRoute } from 'next';
+
+import type { MetadataRoute } from "next";
+
+export const dynamic = "force-static";
+
+const SITE_URL = (
+  process.env.NEXT_PUBLIC_SITE_URL ||
+  "https://shop.mediqosolutions.co.ke"
+).replace(/\/+$/, "");
 
 export default function robots(): MetadataRoute.Robots {
-  const base = process.env.NEXT_PUBLIC_SITE_URL || 'https://mediqo.com';
-  return { rules: { userAgent: '*', allow: '/' }, sitemap: `${base}/sitemap.xml` };
+  return {
+    rules: {
+      userAgent: "*",
+      allow: "/",
+      disallow: "/cart",
+    },
+    sitemap: `${SITE_URL}/sitemap.xml`,
+  };
 }
