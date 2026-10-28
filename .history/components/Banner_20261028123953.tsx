@@ -9,7 +9,7 @@ export default function Banner() {
             Nairobi · Same-day delivery
           </p>
           <h1 className="mt-2 max-w-md text-3xl font-bold text-white lg:text-4xl">
-            Pharmacy essentials, sorted from home
+            Medical essentials, sorted from home
           </h1>
           <p className="mt-2 max-w-md text-white/80">
             Pick what you need, confirm the order on WhatsApp — no app install needed.
