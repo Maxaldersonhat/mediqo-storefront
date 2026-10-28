@@ -4,7 +4,7 @@ import { useState, type FormEvent } from 'react';
 import { createOrder } from '@/lib/api';
 import type { CartItem } from '@/lib/cart-context';
 
-const WHATSAPP_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '0703227679';
+const WHATSAPP_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '+254700119111';
 const BUSINESS_NAME = 'Mediqo Solutions';
 
 interface Props {

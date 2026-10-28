@@ -4,7 +4,7 @@ import { useState, type FormEvent } from 'react';
 import { createOrder } from '@/lib/api';
 import type { CartItem } from '@/lib/cart-context';
 
-const WHATSAPP_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '';
+const WHATSAPP_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '+254';
 const BUSINESS_NAME = 'Mediqo Solutions';
 
 interface Props {
@@ -84,7 +84,7 @@ export default function CheckoutModal({ open, onClose, items, total, onSuccess }
         <form onSubmit={handleSubmit} className="space-y-3">
           <div>
             <label className="mb-1 block text-sm text-gray-600">Name</label>
-            <input value={name} onChange={(e) => setName(e.target.value)} className="w-full rounded-lg border border-gray-200 px-3 py-2 text-sm focus:border-[#0F3D3E] focus:outline-none focus:ring-1 focus:ring-[#0F3D3E]" placeholder="Max Mwaura" />
+            <input value={name} onChange={(e) => setName(e.target.value)} className="w-full rounded-lg border border-gray-200 px-3 py-2 text-sm focus:border-[#0F3D3E] focus:outline-none focus:ring-1 focus:ring-[#0F3D3E]" placeholder="Joe Doe" />
           </div>
           <div>
             <label className="mb-1 block text-sm text-gray-600">Phone</label>
